@@ -18,9 +18,8 @@ const render = messageArray => {
     const convertedMessages = messageArray.map(messageObject => {
         const messageHTML = Message(messageObject)
         return messageHTML
-    })
-    const combinedSections = convertedMessages.join(" ")
-    contentTarget.innerHTML = combinedSections
+    }).join("")
+    contentTarget.innerHTML = convertedMessages
 }
 
 /*
