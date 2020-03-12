@@ -2,7 +2,7 @@ const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".themes")
 
 // Listen for browser generated click event in this component
-contentTarget.addEventListener("click", clickEvent => {
+eventHub.addEventListener("click", clickEvent => {
 
     // Make sure it was one of the color buttons
     if (clickEvent.target.id.startsWith("btnTheme--")) {
